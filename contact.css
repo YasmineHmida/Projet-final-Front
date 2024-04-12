@@ -1,0 +1,302 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact{
+    position: relative;
+    padding: 1vw 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fond{
+    display: flex;
+   align-items: flex-end;
+    width: 80%;
+    height: 80%;
+    z-index: -100;
+}
+.contact .content{
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 4vw;
+    font-weight: 800;
+    color: rgba(217, 27, 91);
+}
+.container{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    background:  rgba(255, 177, 203, 0.575);}
+.container .info{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20vh;
+    margin-left: 10vh; 
+}
+.container .info .box{
+    position: relative;
+    margin: 32 0;
+    display: flex;
+}
+.container .info .box .icon{
+    margin-bottom: 1vh;
+    width: 4vw;
+    height: 5.5vh;
+    background-color: rgba(255, 255, 255, 0.452);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5vw;
+}
+.container .info .box .text1{
+    display: flex;
+    margin-left: 1.3vw;
+    font-size: 1.1vw;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .info .box .text1 h3{
+    font-weight: 700;
+    color: rgba(217, 27, 91);
+}
+.formulaire{
+    width: fit-content;
+    padding: 2.7vw;
+    background:  rgba(255, 151, 186, 0.856);
+    
+}
+.formulaire h2{
+    font-size: 2.2vw;
+    color: rgba(217, 27, 91);
+    font-weight: 700;
+}
+.formulaire .inbox{
+   position: relative; 
+   width: 100%;
+   margin-top: 0.7vh;
+}
+.formulaire .inbox input{
+   width: 100%;
+   padding: 5px 0;
+   font-size: 1.7vw;
+   margin: 10px 0;
+   border: none;
+   border-bottom: 2px solid #f7186a;
+   outline: none;
+   resize: none;
+   background-color: rgba(255, 255, 255, 0.452);
+   border-radius: 5px;
+   
+ }
+ .formulaire .inbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1vw;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #f7186a;
+    outline: none;
+    resize: none;
+    background-color:rgba(255, 255, 255, 0.452);
+    border-radius: 5px;
+  }
+  .formulaire .inbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 1.1vw;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  .formulaire .inbox input:focus~ span,
+  .formulaire .inbox input:valid~ span,
+  .formulaire .inbox textarea:focus~ span,
+  .formulaire .inbox textarea:valid~ span
+  {
+    color: #e91e63;
+    font-size:0.8vw ;
+    transform: translateY(-20px);
+  }
+.formulaire .inbox input[type="submit"]
+{
+    width: 7vw;
+    background:rgba(217, 27, 91);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.7vw;
+    font-size: 1.25vw;
+    border-radius: 5px;
+}
+.formulaire .inbox input[type="submit"]:hover{
+    color: rgba(217, 27, 91) ;
+    background-color: rgb(234, 234, 234);
+    border-radius: 5px;
+}
+@media (max-width: 992px){
+    .contact{
+        padding: 2vw;
+    }
+    .contact .content h2{
+        font-size: 6vw;
+    }
+    .container .info .box .icon{
+        width: 4vw;
+        height: 5.5vh;
+        margin-bottom: 1.4vh;
+        font-size: 2vw;
+    }
+    .container .info .box .text1{
+        margin-left: 1.3vw;
+        font-size: 1.6vw;
+    }
+    .container .info,
+    .formulaire{
+        width: 100%;
+    }
+    
+    .formulaire h2{
+        font-size: 2vw;
+        color: rgba(217, 27, 91);
+        font-weight: 700;
+    }
+    
+    .formulaire .inbox input{
+       font-size: 1.6vw;
+     }
+     .formulaire .inbox textarea{
+        font-size: 1.6vw;
+      }
+      .formulaire .inbox span{
+        font-size: 1.6vw;
+      }
+      .formulaire .inbox input:focus~ span,
+      .formulaire .inbox input:valid~ span,
+      .formulaire .inbox textarea:focus~ span,
+      .formulaire .inbox textarea:valid~ span
+      {
+        font-size:1.1vw ;
+        transform: translateY(-3vh);
+      }
+    .formulaire .inbox input[type="submit"]
+    {
+        font-size: 1.8vw;
+    }
+    }
+@media (max-width: 768px){
+.contact{
+    padding: 5vw;
+}
+.container{
+    flex-direction: column;
+}
+.container .info{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 30vh;
+}
+.contact .content h2{
+    font-size: 6vw;
+}
+.container .info .box .icon{
+    width: 3vw;
+    height: 4vh;
+    margin-bottom: 1vh;
+    font-size: 2vw;
+}
+.container .info .box .text1{
+    margin-left: 1.3vw;
+    font-size: 1.8vw;
+}
+.container .info,
+.formulaire{
+    width: 100%;
+}
+
+.formulaire h2{
+    font-size: 2.2vw;
+    color: rgba(217, 27, 91);
+    font-weight: 700;
+}
+
+.formulaire .inbox input{
+   font-size: 1.8vw;
+ }
+ .formulaire .inbox textarea{
+    font-size: 1.8vw;
+  }
+  .formulaire .inbox span{
+    font-size: 1.8vw;
+  }
+  .formulaire .inbox input:focus~ span,
+  .formulaire .inbox input:valid~ span,
+  .formulaire .inbox textarea:focus~ span,
+  .formulaire .inbox textarea:valid~ span
+  {
+    color: #e91e63;
+    font-size:1.3vw ;
+    transform: translateY(-2.8vh);
+  }
+.formulaire .inbox input[type="submit"]
+{
+    font-size: 2vw;
+}
+}
+@media (max-width: 414px){
+    .contact .content h2{
+        font-size: 6vw;
+    }
+    .container .info .box .icon{
+        width: 3vw;
+        height: 4vh;
+        margin-bottom: 1.2vh;
+        font-size:2.2vw;
+    }
+    .container .info .box .text1{
+        margin-left: 1.5vw;
+        font-size: 2vw;
+    }
+    .container .info,
+    .formulaire{
+        width: 100%;
+    }
+    
+    .formulaire h2{
+        font-size: 2.4vw;
+        color: rgba(217, 27, 91);
+        font-weight: 700;
+    }
+    
+    .formulaire .inbox input{
+       font-size: 2vw;
+     }
+     .formulaire .inbox textarea{
+        font-size: 2vw;
+      }
+      .formulaire .inbox span{
+        font-size: 2vw;
+      }
+      .formulaire .inbox input:focus~ span,
+      .formulaire .inbox input:valid~ span,
+      .formulaire .inbox textarea:focus~ span,
+      .formulaire .inbox textarea:valid~ span
+      {
+        font-size:1.5vw ;
+        transform: translateY(-2.8vh);
+      }
+    .formulaire .inbox input[type="submit"]
+    {
+        font-size: 2.3vw;
+    }
+    }

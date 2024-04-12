@@ -1,0 +1,221 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.login-form{
+    padding: 5%;
+    border: 0.2px solid rgba(217, 27, 91);
+    background-color: rgba(255, 177, 203, 0.575);
+}
+
+.login-welcome{
+    color: aliceblue;
+    text-align: center;
+    background-color: rgba(255, 151, 186, 0.856);
+    padding: 15.4%;
+}
+.login-form input{
+    margin-bottom: 10%;
+    border-radius: 1.7vw;
+    width: 100%;
+    height: 50%;
+    border: 1px solid rgba(217, 27, 91);
+}
+.logo img{
+    width:70%;
+    padding-bottom: 10%;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bn632-hover {
+    width: 11vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 3.5vw;
+    -moz-transition:  all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -moz-transition:  all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn27 {
+    background-image: linear-gradient(
+      to right,
+      #ff5b9db1,
+      #84bbd2c2,
+      #f05b91a0,
+      #9eb7efc8
+    );
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+  }
+  .login-form input::placeholder{
+    color:grey;
+    font-size: 1.3vw;
+  }
+  .bn17 {
+    margin-top: 1.3vh;
+    font-family: lato,sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    position: relative;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+  }
+  .bn17:hover{
+    color:  rgba(255, 151, 186, 0.856) ;
+    background-color: rgba(234, 234, 234, 0.801);
+    border-radius: 1.4vw;
+    border-color:  rgb(255, 151, 186);
+  }
+  .contact-form .form-field {
+    position: relative;
+    margin: 2.2vh 0;
+  }
+  .contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 6vh;
+    border-width: 0 0 2px 0;
+    border-color: #f7186a;
+    font-size: 1.3vw;
+    line-height: 2.5vh;
+    font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+    outline: none;
+  }
+  .contact-form .input-text:focus + .label,
+  .contact-form .input-text.not-empty + .label {
+    -webkit-transform: translateY(-4vh);
+            transform: translateY(-4vh);
+            font-size: 14px;
+  }
+  .contact-form .label {
+    position: absolute;
+    left: 1.4vw;
+    bottom: 2vh;
+    font-size: 1.3vw;
+    line-height: 1.8vh;
+    font-weight: 400;
+    color: #f7186a;
+    cursor: text;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, 
+    -webkit-transform.3s ease-in-out;
+  }
+  .contact-form{
+    background-color: (199, 133, 155, 0.185);
+  }
+  .Back{
+    width: 4.2vw;
+    height: 6vh;
+    background-color: rgba(209, 135, 160, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-color: rgba(217, 27, 91);
+    font-size: 2vw;
+    color: rgba(217, 27, 91);
+    transition: 0.3s;
+  }
+  .Back:hover{
+    background-color:#ffffff57;
+  }
+  .login-welcome h1{
+    font-size: 2.8vw;
+  }
+  .login-welcome p{
+    font-size: 1.3vw;
+  }
+  @media (max-width: 768px){
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+  }
+  .login-welcome{
+      padding: 10;
+  }
+  .logo img{
+      width:70%;
+      padding-bottom: 10%;
+  }
+  .bn632-hover {
+      width: 10vw;
+      height: 6vh;
+      font-size: 2.5vw;
+      font-weight: 600;
+      margin: 3vw;
+    }
+    .bn17 {
+      margin-top: 1.5vh;
+      font-size: 2vw;
+    }
+    .contact-form .input-text {
+      font-size: 2vw;
+      line-height: 2.5vh;
+      font-weight: 400;
+    }
+    .contact-form .input-text:focus {
+      outline: none;
+    }
+    .contact-form .input-text:focus + .label,
+    .contact-form .input-text.not-empty + .label {
+      -webkit-transform: translateY(-4vh);
+              transform: translateY(-4vh);
+              font-size: 1.5vw;
+    }
+    .contact-form .label {
+      font-size: 2.2vw;
+    }
+    .Back{
+      width: 6vw;
+      height: 6vh;
+      font-size: 3.2vw;
+      color: rgba(217, 27, 91);
+    }
+    .login-welcome h1{
+      font-size: 3.5vw;
+    }
+    .login-welcome p{
+      font-size: 2vw;
+    }
+  }

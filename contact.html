@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="./acceuil.html">
+    <link rel="stylesheet" href="./acceuil.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ruda:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ruda:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <a href="#"><img src="./LOGO-removebg-preview.png" class="logo"></a>
+       <nav> 
+        <a class="close" onclick="closemenu()"  > <img src="./close.png"></a>
+        <ul id="menu">
+            <li><a href="./acceuil.html">Acceuil</a></li>
+            <li><a href="./page1.html"> Nos recettes</a></li>
+            <li><a href="./contact.html" class="active"> Contactez-nous</a></li>
+            <li><a href="./login.html"> Connexion</a></li>
+            <li><a href="./crud.html"> Vos recettes</a></li>
+        </ul>
+      <a class="menu" onclick="menubar()" id="me"> <img src="./list 1.png" ></a>
+    </nav>
+</header>
+
+<section class="contact">
+    <div class="content">
+        <h2> Contact Us</h2>
+    </div>
+    <div class="container">
+        <div class="info">
+            <div class="box">
+                <div class="icon"><ion-icon name="navigate-outline"></ion-icon></i></div>
+                <div class="text1">
+                    <h3>Adress</h3>
+                    <p> 11 Rue Ahmed Chaouki <br> Menzah5- Ariana <br> Tunisia</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                <div class="text1">
+                    <h3>Phone</h3>
+                    <p> +21621338870</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                <div class="text1">
+                    <h3>Email</h3>
+                    <p>yasminehmida.yh@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="formulaire">
+            <form>
+                <h2>Send Messages</h2>
+                <div class="inbox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inbox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inbox">
+                    <textarea required="required"></textarea>
+                    <span>Type your Message</span>
+                </div>
+                <div class="inbox">
+                    <input type="submit" name="" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <footer>
+     <ul class="icone">
+        <li><a><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a><ion-icon name="logo-instagram"></ion-icon></ion-icon></a></li>
+        <li><a><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a></li>
+     </ul>
+     <ul class="fmenu">
+        <li><a href="./acceuil.html"> Acceuil</a></li>
+        <li><a href="./page1.html"> Nos recettes</a></li>
+        <li><a href="./contact.html"> Contactez-nous</a></li>
+        <li><a href="./login.html"> Se connecter</a></li>
+        <li><a href="./signup.html">Créer un compte</a></li>
+        <li><a href="./crud.html"> Vos recettes</a></li>
+    </ul>
+    <p>©2024 || All Rights Reserved </p>
+    </footer>   
+    </section>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+function menubar(){
+const close=document.querySelector(".close")
+const menu= document.getElementById("menu")
+const menubtn= document.getElementById("me")
+me.style.display="none"
+menu.style.display="flex"
+menu.style.flexDirection="column"
+menu.style.marginTop="7vh"
+close.style.display="block"
+}
+</script>
+<script>
+function closemenu(){ 
+const close=document.querySelector(".close")
+const menubtn= document.getElementById("me")
+const menu= document.getElementById("menu")
+menu.style.display="none"
+me.style.display="block"
+close.style.display="none"
+}
+</script>
+</body>
+</html>

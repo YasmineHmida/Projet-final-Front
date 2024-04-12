@@ -1,0 +1,200 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#container {
+padding-top: 10vh;
+display: flex;
+flex-direction: column;
+width: 100vw;
+height: 100vh;
+align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 4vh;
+  color: rgb(217, 27, 91);
+  font-size: 3vw;
+}
+
+#input-container {
+  width:70%;
+  margin-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+input
+ {
+  width: 15vw;
+  padding: 0.7vw;
+  font-size: 1vw;
+  margin-right: 0.7vw;
+  border-radius: 0.7vw;
+  border: 1px solid #ccc;
+}
+
+input:focus
+{
+  border-color: red;
+  outline: 0;
+}
+
+button {
+  padding: 0.7vw 1.4vw;
+  font-size: 1vw;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#update-btn {
+  background-color: #3c66f0;
+  display: none;
+  margin-top: 0.7vh;
+  margin-right: 0.7vw;
+}
+
+#cancel-btn {
+  background-color: #f44336;
+  display: none;
+  margin-top: 0.7vh;
+}
+
+.edit-btn{
+  background-color: #ffc107;
+}
+
+.delete-btn{
+  background-color: #dc3545;
+  margin-left:0.7vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    overflow-x:auto;
+    height: max-content;
+    background:  rgba(255, 177, 203, 0.575);
+    border-radius:1.4vw;
+    box-shadow:0px 2px 4px rgba(217, 27, 90, 0.632) ;
+    margin: 1.4vw;
+    padding: 10px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.name{color: gray;
+    font-size: 1vw;
+    padding: 5px;
+    margin: 4vh 0 3vh 0;
+  } 
+.Rname{
+     color: rgb(217, 27, 91);
+    font-weight:bolder;
+    font-size: 1.8vw;
+    text-transform: capitalize;
+    padding: 5px;
+    border-radius:1.4vw;
+}
+.ing , .meth{
+  font-size: 1.6;
+}
+@media only screen and (max-width:992px){
+/* #container{
+  background-color: aqua;
+} */
+  input
+   {
+    font-size: 1.2vw;
+  }
+  
+  button {
+    font-size: 1.3vw;
+  }
+  .card{
+      width: 30vw;
+      align-items: center;
+  }
+  /* .card-container{
+    display: flex;
+    flex-direction: column;
+  } */
+}
+@media only screen and (max-width:768px){
+  /* #container{
+    background-color:red;
+  } */ 
+
+  h1{
+    font-size: 3.5vw;
+  }
+  input
+   {
+    width: 20vw;
+    font-size: 1.5vw;
+    margin: 0.7vw;
+  }
+  button {
+    font-size: 1.5vw;
+  }
+  .card{
+      width: 40vw;
+  }
+  .name{
+    font-size: 1.7vw;
+  }
+  .Rname{
+      font-size: 2.4vw;
+  }
+  .ing , .meth{
+    font-size: 2vw;
+  } 
+}
+@media only screen and (max-width:414px){
+  h1{
+    font-size: 4.5vw;
+  }
+  #container{
+    padding-top: 5vh;
+  }
+  input{
+    width: 25vw;
+    font-size: 2vw;
+  }
+  button {
+    font-size: 2vw;
+  }
+  .card{
+      width: 50vw;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .name{
+      font-size: 2vw;
+      padding: 5px;
+      margin-top: 4vh;
+    } 
+  .Rname{
+      font-size: 3vw;
+  }
+  .ing , .meth{
+    font-size: 2.5vw;
+  }
+}

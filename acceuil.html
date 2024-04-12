@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./acceuil.css">
+    <title>Cooking With YASMINA</title>
+</head>
+<body>
+
+    <header>
+           <img src="./LOGO-removebg-preview.png" class="logo">
+           <nav> 
+            <a class="close" onclick="closemenu()"  > <img src="./close.png"></a>
+            <ul id="menu">
+                <li><a href="./acceuil.html" class="active"> Acceuil</a></li>
+                <li><a href="./page1.html"> Nos recettes</a></li>
+                <li><a href="./contact.html"> Contactez-nous</a></li>
+                <li><a href="./login.html"> Connexion</a></li>
+                <li><a href="./crud.html"> Vos recettes</a></li>
+            </ul>
+          <a class="menu" onclick="menubar()" id="me"> <img src="./list 1.png" ></a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="text">
+        <h1>Cooking with YASMINA</h1>
+        <p>Bienvenue sur notre site de recettes ! <br>Explorez nos délices culinaires et régalez-vous. <br> Bon appétit !</p>
+        <a href="./login.html"> Se connecter</a>
+        <a href="./signup.html">S'inscrire</a>
+    </div>
+        <div class="slider" >
+        <div class="images">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <input type="radio" name="slide" id="img4">
+            <img src="./cupcakes.avif" class="m1" alt="img1">
+            <img src="./macarons.avif" class="m2" alt="img2">
+            <img src="./tacos.jpg" class="m3" alt="img3">
+            <img src="./pasta.jpg" class="m4" alt="img4">
+        </div>
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+        </div>
+    </div>
+    </section>
+
+    <section class="footer">
+        <footer>
+         <ul class="icone">
+            <li><a><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a><ion-icon name="logo-instagram"></ion-icon></ion-icon></a></li>
+            <li><a><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a></li>
+         </ul>
+         <ul class="fmenu">
+            <li><a href="./acceuil.html"> Acceuil</a></li>
+            <li><a href="./page1.html"> Nos recettes</a></li>
+            <li><a href="./contact.html"> Contactez nous</a></li>
+            <li><a href="./login.html"> Se connecter</a></li>
+            <li><a href="./signup.html">Créer un compte</a></li>
+            <li><a href="./crud.html"> Vos recettes</a></li>
+        </ul>
+        <p>©2024 || All Rights Reserved </p>
+        </footer>   
+    </section>
+    
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+function menubar(){
+    const close=document.querySelector(".close")
+    const menu= document.getElementById("menu")
+    const menubtn= document.getElementById("me")
+    me.style.display="none"
+    menu.style.display="flex"
+    menu.style.flexDirection="column"
+    menu.style.marginTop="6vh"
+    close.style.display="block"
+}
+</script>
+<script>
+    function closemenu(){ 
+    const close=document.querySelector(".close")
+    const menubtn= document.getElementById("me")
+    const menu= document.getElementById("menu")
+    menu.style.display="none"
+    me.style.display="block"
+    close.style.display="none"
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crorquettes</title>
+    <link rel="stylesheet" href="./recette1.html">
+    <link rel="stylesheet" href="../acceuil.css">
+    <link rel="stylesheet" href="../contact.css">
+    <link rel="stylesheet" href="./recette.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="../LOGO-removebg-preview.png" class="logo"></a>
+       <nav> 
+        <a class="close" onclick="closemenu()"  > <img src="../close.png"></a>
+        <ul id="menu">
+            <li><a href="../acceuil.html" > Acceuil</a></li>
+            <li><a href="../page1.html" class="active"> Nos recettes </a></li>
+            <li><a href="../contact.html"> Contactez-nous</a></li>
+            <li><a href="../login.html"> Connexion</a></li>
+            <li><a href="../crud.html"> Vos recettes</a></li>
+        </ul>
+      <a class="menu" onclick="menubar()" id="me"> <img src="../list 1.png" ></a>
+    </nav>
+</header>
+<section class="contact">
+    <div class="content">
+        <h2>Recette de Croquettes au pommes de terre</h2>
+    </div>
+    <div class="container">   
+        <div class="info">
+            <div ><img src="./croquette.jpg" class="photo"></div>
+            <h2> Ingredients</h2>
+            <h4> 500 g de pommes de terre</h4>
+            <h4> 60 g de parmesan râpé</h4>
+            <h4> Farine</h4>
+            <h4> Sel</h4>
+            <h4> 12 billes de mozzarella</h4>
+            <h4> 1 oeuf</h4>
+            <h4>Chapelure</h4>
+            <h4> Poivre</h4>
+            <h2> Matériel</h2>
+            <h4> Presse purée</h4>
+            <h4> Friteuse </h4>
+            <h4> Four </h4>
+        </div>
+        <div class="formulaire">
+            <h2>Méthode</h2>
+            <div class="num">1</div><div class="etape">Faites cuire les pommes de terre en robe des champs au four sur un lit de sel.</div>
+            <div class="num">2</div><div class="etape">Coupez-les en deux et prélevez la pulpe.</div>
+            <div class="num">3</div><div class="etape">Ecrasez-la en purée.</div>
+            <div class="num">4</div><div class="etape">Ajoutez le parmesan râpé dans la purée de pommes de terre. </div>
+            <div class="num">5</div><div class="etape">Salez et poivrez.</div>
+            <div class="num">6</div><div class="etape">Mélangez bien. <br>La préparation doit être homogène.</div>
+            <div class="num">7</div><div class="etape">Faites 12 portions avec la purée de pommes de terre.</div>
+            <div class="num">8</div><div class="etape"> Prenez une portion dans la paume de la main et aplatissez-la. </div>
+            <div class="num">9</div><div class="etape">Placez au centre une bille de mozzarella.</div>
+            <div class="num">10</div><div class="etape"> Enfermez la bille avec la purée pour former une boule. </div>
+            <div class="num">11</div><div class="etape">Faites chauffer l'huile de friture dans une friteuse à 160°C.</div>
+            <div class="num">12</div><div class="etape">Dans une assiette mettez de la farine, dans une autre l'oeuf battu et dans une troisième la chapelure.</div>
+            <div class="num">13</div><div class="etape">Passez chaque croquette formée alternativement dans la farine, l'oeuf et la chapelure. </div>
+            <div class="num">14</div><div class="etape">Passez-les dans la friture 4 minutes.</div>
+
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <footer>
+     <ul class="icone">
+        <li><a><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a><ion-icon name="logo-instagram"></ion-icon></ion-icon></a></li>
+        <li><a><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a></li>
+     </ul>
+     <ul class="fmenu">
+        <li><a href="../acceuil.html" class="active"> Acceuil</a></li>
+        <li><a href="../page1.html"> Nos Recette</a></li>
+        <li><a href="../contact.html"> Contactez-nous</a></li>
+        <li><a href="../login.html"> Se connecter</a></li>
+        <li><a href="../signup.html">Créer un compte</a></li>
+        <li><a href="../crud.html"> Vos recettes</a></li>
+    </ul>
+    <p>©2024 || All Rights Reserved </p>
+    </footer>   
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function menubar(){
+            const close=document.querySelector(".close")
+            const menu= document.getElementById("menu")
+            const menubtn= document.getElementById("me")
+            me.style.display="none"
+            menu.style.display="flex"
+            menu.style.flexDirection="column"
+            menu.style.marginTop="7vh"
+            close.style.display="block"
+        }
+        </script>
+        <script>
+            function closemenu(){ 
+            const close=document.querySelector(".close")
+            const menubtn= document.getElementById("me")
+            const menu= document.getElementById("menu")
+            menu.style.display="none"
+            me.style.display="block"
+            close.style.display="none"
+        }
+        </script>
+</body>
+</html>

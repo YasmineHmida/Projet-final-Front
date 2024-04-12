@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choux au saumon</title>
+    <link rel="stylesheet" href="./recette1.html">
+    <link rel="stylesheet" href="../acceuil.css">
+    <link rel="stylesheet" href="../contact.css">
+    <link rel="stylesheet" href="./recette.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="../LOGO-removebg-preview.png" class="logo"></a>
+       <nav> 
+        <a class="close" onclick="closemenu()"  > <img src="../close.png"></a>
+        <ul id="menu">
+            <li><a href="../acceuil.html" > Acceuil</a></li>
+            <li><a href="../page1.html" class="active"> Nos recettes </a></li>
+            <li><a href="../contact.html"> Contactez-nous</a></li>
+            <li><a href="../login.html"> Connexion</a></li>
+            <li><a href="../crud.html"> Vos recettes</a></li>
+        </ul>
+      <a class="menu" onclick="menubar()" id="me"> <img src="../list 1.png" ></a>
+    </nav>
+</header>
+<section class="contact">
+    <div class="content">
+        <h2>Recette de Choux salés au saumon</h2>
+    </div>
+    <div class="container">   
+        <div class="info">
+            <div ><img src="./choux.jpg" class="photo"></div>
+            <h2> Ingredients</h2>
+            <h4> <b>Pour la pâte à choux</b></h4>
+            <h4> 4 oeufs</h4>
+            <h4> 120 g de beurre</h4>
+            <h4> 140 g de farine</h4>
+            <h4> ½ c. à c. de sel ou sel fin</h4>
+            <h4> <b>Pour la garniture</b></h4>
+            <h4> 25 cl de crème fraîche</h4>
+            <h4> Moutarde</h4>
+            <h4> Citron</h4>
+            <h4> Poivre</h4>
+            <h4> 150 g de saumon fumé</h4>
+            <h4>Ciboulette</h4>
+            <h4> Sel</h4>
+            <h2> Matériel</h2>
+            <h4> Casserole</h4>
+            <h4> Grille de refroidissement</h4>
+            <h4> Poche à douille</h4>
+            <h4> Four</h4>
+            <h4> Plaque de cuisson pour four </h4>
+        </div>
+        <div class="formulaire">
+            <h2>Méthode</h2>
+            <div class="num">1</div><div class="etape"> <b>Préparez la pâte à choux</b><br>Dans une casserole, faites bouillir 25 cl d'eau avec le beurre et le sel.</div>
+            <div class="num">2</div><div class="etape">Quand le beure est fondu, ajoutez la farine hors du feu et mélangez vivement.</div>
+            <div class="num">3</div><div class="etape">Remettez 1 à 2 min à feu doux, sans cesser de remuer, jusqu'à ce que la pate forme une masse lisse et sèche qui se décolle des parois.</div>
+            <div class="num">4</div><div class="etape">Retirez du feu, puis incorporez les oeufs l'un après l'autre, en mélangeant énergiquement.</div>
+            <div class="num">5</div><div class="etape">Attendez que chaque œuf soit complètement absorbé avant d'en introduire un autre.</div>
+            <div class="num">6</div><div class="etape">Préchauffez le four à 180°C et recouvrez une plaque de papier siliconé.</div>
+            <div class="num">7</div><div class="etape">Formez les choux sur la plaque à l'aide d'une poche à douille muni d'une douille lisse (ou à l'aide de 2 cuillères à soupe) en les espaçant bien.</div>
+            <div class="num">8</div><div class="etape">Enfournez pendant 20 à 25 min, jusqu'à ce que les mini choux soit bien dorés, puis faites refroidir sur une grille.</div>
+            <div class="num">9</div><div class="etape"> <b>Préparez la garniture</b><br>Mélanger la crème fraîche, une cuil. à café de moutarde, un peu de jus de citron, le saumon coupé finement, et de la ciboulette ciselée.</div>
+            <div class="num">10</div><div class="etape">Retirez le haut de chaque chou et remplissez-les avec la garniture.</div>
+            <div class="num">11</div><div class="etape">Mettez 2 heures au frais avant de servir</div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <footer>
+     <ul class="icone">
+        <li><a><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a><ion-icon name="logo-instagram"></ion-icon></ion-icon></a></li>
+        <li><a><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a></li>
+     </ul>
+     <ul class="fmenu">
+        <li><a href="../acceuil.html" class="active"> Acceuil</a></li>
+        <li><a href="../page1.html"> Nos Recette</a></li>
+        <li><a href="../contact.html"> Contactez-nous</a></li>
+        <li><a href="../login.html"> Se connecter</a></li>
+        <li><a href="../signup.html">Créer un compte</a></li>
+        <li><a href="../crud.html"> Vos recettes</a></li>
+    </ul>
+    <p>©2024 || All Rights Reserved </p>
+    </footer>   
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function menubar(){
+            const close=document.querySelector(".close")
+            const menu= document.getElementById("menu")
+            const menubtn= document.getElementById("me")
+            me.style.display="none"
+            menu.style.display="flex"
+            menu.style.flexDirection="column"
+            menu.style.marginTop="7vh"
+            close.style.display="block"
+        }
+        </script>
+        <script>
+            function closemenu(){ 
+            const close=document.querySelector(".close")
+            const menubtn= document.getElementById("me")
+            const menu= document.getElementById("menu")
+            menu.style.display="none"
+            me.style.display="block"
+            close.style.display="none"
+        }
+        </script>
+</body>
+</html>

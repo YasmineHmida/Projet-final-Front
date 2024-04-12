@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.Recette{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.r-container{
+    margin-top: 5vh;
+    transition: 0.5s;
+}
+.r-container:hover{
+    transform: translateY(-20px);
+}
+.rec{
+    width: 20vw;
+    max-height: max-content;
+    background:  rgba(255, 177, 203, 0.575);
+    border-top-left-radius: 0;
+    border-bottom-right-radius:1.4vw;
+    border-bottom-left-radius: 1.4vw;
+    border-top-right-radius: 5.6vw;
+    overflow: hidden;
+    box-shadow:0px 2px 4px rgba(217, 27, 90, 0.632) ;
+    margin: 1.4vw;
+}
+.rec img{
+    width: 100%;
+    border-top-right-radius: 5.6vw;
+}
+.r-content{
+    padding: 1.1vw 2vh;
+    text-align: center;
+}
+.r-content h3{
+    font-size: 2vw;
+    margin-bottom: 1vh;
+}
+.r-content p{
+    color: #666;
+    font-size: 1vw;
+    line-height: 1.3;
+}
+.r-content .btn{
+    display: inline-block;
+    width: fit-content;
+    background:rgba(217, 27, 91);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.7vw;
+    font-size: 1.25vw;
+    border-radius: 0.35vw;
+    margin-top: 1vh;
+}
+.r-content .btn:hover{
+    color: rgba(217, 27, 91) ;
+    background-color: rgb(234, 234, 234);
+    border-radius: 0.35vw;
+}
+@media only screen and (max-width:1440px){ 
+.rec{
+        width: 20vw;
+    }
+}
+@media only screen and (max-width:992px){
+    .rec{
+            width: 30vw;
+        }
+        .r-content h3{
+            font-size: 2.2vw;
+            margin-bottom: 1vh;
+        }
+        .r-content p{
+            font-size: 1.2vw;
+            line-height: 1.5;
+        }
+        .r-content .btn{
+            padding: 0.7vw;
+            font-size: 1.25vw;
+            border-radius: 0.35vw;
+            margin-top: 1vh;
+        }
+    }
+@media only screen and (max-width:768px){
+    .rec{
+            width: 40vw;
+        }
+        .r-content h3{
+            font-size: 2.8vw;
+        }
+        .r-content p{
+            font-size: 2vw;
+            line-height: 2;
+        }
+        .r-content .btn{
+            font-size: 2.3vw;
+        }
+    }
+@media only screen and (max-width:414px){
+            .Recette{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .rec{
+                    width: 50vw;
+                }
+                .r-content h3{
+                    font-size: 3.5vw;
+                    margin-bottom: 1vh;
+                }
+                .r-content p{
+                    font-size: 2.5vw;
+                    line-height: 2;
+                }
+                .r-content .btn{
+                    font-size: 2.5vw;
+                    margin-top: 0.5vh;
+                }
+            }
